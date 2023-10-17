@@ -547,7 +547,22 @@
                 <div class="col-lg-8">
                     <div class="contact-form text-center">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <form
+                        action="https://formspree.io/f/makpalyy@gmail.com"
+                        method="POST"
+                      >
+                        <label>
+                          Your email:
+                          <input type="email" name="email">
+                        </label>
+                        <label>
+                          Your message:
+                          <textarea name="message"></textarea>
+                        </label>
+                        <!-- your other form fields go here -->
+                        <button type="submit">Send</button>
+                      </form>
+                        <!-- <form name="sentMessage" id="contactForm" novalidate="novalidate">
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
                                     <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
@@ -575,7 +590,7 @@
                                 <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
                                     Message</button>
                             </div>
-                        </form>
+                        </form> -->
                     </div>
                 </div>
             </div>
